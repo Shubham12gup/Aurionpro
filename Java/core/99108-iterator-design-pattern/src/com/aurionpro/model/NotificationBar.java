@@ -1,0 +1,22 @@
+package com.aurionpro.model;
+
+public class NotificationBar {
+	
+	NotificationCollection notifications;
+	 
+    public NotificationBar(NotificationCollection notifications)
+    {
+        this.notifications = notifications;
+    }
+ 
+    public void printNotifications()
+    {
+        CollectionIterator iterator = notifications.createIterator();
+        System.out.println("-------NOTIFICATION BAR------------");
+        while (iterator.hasNext())
+        {
+            Notification n = (Notification)iterator.next();
+            System.out.println(n.getNotification());
+        }
+    }
+}

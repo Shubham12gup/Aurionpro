@@ -1,0 +1,114 @@
+.container{
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    background: rgb(251, 251, 252);
+    border-radius: 30px;
+    min-width: 600px;
+    position: absolute;
+    min-height: 450px;
+    transform: translate(-50%,-50%);
+    /* background-color: rgb(243, 189, 207); */
+
+    
+}
+
+.heading {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-align: center;
+    background-color: #bc5a45;
+    padding: 10px;
+    color: aliceblue;
+
+}
+
+
+body{
+    background:#f18973;
+    /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+}
+
+h2{
+    font-size: xx-large;
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+    color: #bc5a45;
+}
+
+ul{
+    list-style-type: none;
+    padding: 1;
+}
+ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #bc5a45;
+    font-weight: bold;
+}
+ul li label{
+    cursor: pointer;
+}
+
+button{
+    /* top: 100%; */
+    background-color:  #bc5a45;
+    border-radius: 40px;
+    color: #fff;
+    border: none;
+    display: block;
+    width: 25%;
+    font-size: large;
+    margin: auto;
+    padding: 1.3rem;
+}
+
+button:hover{
+    background-color: #881e07;
+}
+
+/* custom radio */
+
+input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+  }
+  
+input[type="radio"] + label {
+    position: relative;
+    padding: 1px 0 0 40px;
+    cursor: pointer;
+  }
+  
+input[type="radio"]+label:before {
+    content: '';
+    background: #fff;
+    border: 2px solid #bc5a45;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+input[type="radio"]+label:after {
+    content: '';
+    background: #bc5a45;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    opacity: 0;
+    transform: scale(2);
+    transition: transform 0.3s linear, opacity 0.3s linear;
+}
+
+input[type="radio"]:checked+label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+

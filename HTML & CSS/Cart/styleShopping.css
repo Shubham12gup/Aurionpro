@@ -1,0 +1,15 @@
+body{
+    width: 100%;
+    height: auto;
+}
+
+.child1{
+flex-basis: 450px;
+
+}
+
+.child2{
+    flex-basis: 450px;
+
+
+    }

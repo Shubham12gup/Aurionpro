@@ -1,0 +1,24 @@
+<p>userform works!</p>
+
+<form #userForm = "ngForm" (submit) = "addUser(userForm)">
+    <label for="username">User Name: </label>
+    <input type="text" name="userName" [(ngModel)]="userName" minlength="6" maxlength="8" required>
+    <br><br>
+
+    <label for="username">User Type: </label>
+    <select name="userType" [(ngModel)]="userType" required>
+        <option value="1">Guest</option>
+        <option value="2">Admin</option>
+    </select>
+    <br><br>
+
+    <label>Select Gender: </label><br>
+    <input type="radio" name="userGender" value="male" checked [(ngModel)]="userGender" required>Male<br>
+    <input type="radio" name="userGender" value="female" [(ngModel)]="userGender" required>Female
+    <br><br>
+
+    <input type="checkbox" name ="conditions" [(ngModel)]="conditions" required>Agree to policy.
+    <br><br>
+
+    <button type="submit" [disabled]="!userForm.valid">Add User</button>
+</form>

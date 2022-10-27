@@ -1,0 +1,62 @@
+/* h1{
+    color: blueviolet;
+} */
+
+label{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: large;
+    /* color: blueviolet; */
+}
+
+body{
+    background-color: #ffebff;
+}
+
+input {
+    width: 30%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+
+.submit{
+    background-color: #1c1833;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    /* height: 100%; */
+    width: 30%;
+    padding: 12px 15px;
+    border-radius: 5px;
+}
+
+.delete, .update{
+    background-color: #1c1833;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    /* height: 100%; */
+    width: 80px;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+td{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: medium;
+}
+
+th{ 
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    line-height: 1.6;
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:property-placeholder location="classpath:resource/coach.properties"/>
+	
+	<!-- scope="prototype" creates new object everytime and scope="singleton" creates only one object
+	default scope type is singleton -->
+	
+	<bean id="cricketCoach" class="com.aurionpro.springXml.CricketCoach" scope="" 
+		init-method="doInit" destroy-method="doDestroy">
+		<constructor-arg ref="weightLoss"></constructor-arg>
+		<constructor-arg value="Shubham"></constructor-arg>
+		<constructor-arg value="${cricketCoach.country}"></constructor-arg>
+		
+	</bean>
+	
+	<bean id="footballCoach" class="com.aurionpro.springXml.FootballCoach">
+		<constructor-arg ref="weigtGain"></constructor-arg>
+	</bean>
+	
+	<bean id="weightLoss" class="com.aurionpro.springXml.WeightLossDiet">
+	</bean>
+	
+	<bean id="weigtGain" class="com.aurionpro.springXml.WeightGainDiet">
+	</bean>
+</beans>
+
+
+
+
+

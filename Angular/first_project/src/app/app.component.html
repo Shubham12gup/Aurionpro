@@ -1,0 +1,100 @@
+<h1>Angular project: {{title}}</h1>
+<h2>{{name}}</h2>
+
+<!-- Name: <input type="text" name="input" #box>
+<button (click)="getValue(box.value)">submit</button>
+<h2>{{displayText}}</h2> -->
+
+
+<!-- property binding -->
+<input type="text" name="property" [disabled]="isDisabled">
+<button (click) = "disableInput()">Disable</button>
+<br><br>
+
+<!-- conditional directives -->
+<div *ngIf="show, else block"> 
+  Content to be displayed
+</div>
+
+<ng-template #block>else block</ng-template>
+<br>
+
+<div *ngIf="show, then trueblock else falseblock"> </div>
+<ng-template #trueblock><h2> true block</h2></ng-template>
+<ng-template #falseblock><h2>false block</h2></ng-template>
+
+<hr>
+
+<ng-template [ngIf] = "color==='blue'">
+  <h1 style="color:blue" >Blue</h1>
+</ng-template>
+
+<ng-template [ngIf] = "color==='green'">
+  <h1 style="color:green" >Green</h1>
+</ng-template>
+
+<ng-template [ngIf] = "color==='yellow'">
+  <h1 style="color:yellow" >Yellow</h1>
+</ng-template>
+
+<ng-template [ngIf] = "color==='red'">
+  <h1 style="color:red" >Red</h1>
+</ng-template>
+
+<!-- switch conditional directive -->
+<div [ngSwitch] = "color">
+  <h1 *ngSwitchCase="'blue'" style="color:blue">Blue</h1>
+  <h1 *ngSwitchCase="'green'" style="color:green">Green</h1>
+  <h1 *ngSwitchCase="'yellow'" style="color:yellow">yellow</h1>
+  <h1 *ngSwitchCase="'red'" style="color:red">Red </h1>
+  <h1 *ngSwitchDefault style="color:magenta">Default Color</h1>
+</div>
+
+<!-- ng for -->
+<ul>
+  <li *ngFor = "let player of players">{{player}}</li>
+</ul>
+
+<!-- ng for objects -->
+<table border="1">
+  <thead>
+    <th>Name</th>
+    <th>Country</th>
+    <th>Run</th>
+    <th>Matches</th>
+
+  </thead>
+  <tr *ngFor = "let man of batsman">
+    <td>{{man.name}}</td>
+    <td>{{man.country}}</td>
+    <td>{{man.run}}</td>
+    <td>{{man.matches}}</td>
+  </tr>
+</table>
+<hr>
+
+<!-- Nested for -->
+<!-- <ul>
+  <li *ngFor = "let score of scoreDetails">
+    {{score.name}}
+    {{score.matches}}
+    <ol>
+      Runs<li *ngFor = "let runs of score.lastFiveInningScores"> {{runs}}</li>
+    </ol>
+  </li>
+</ul> -->
+
+<!-- Style Binding -->
+<div [style.color] = "fontColor" [style.backgroundColor] = "bgColor"> Hello World</div>
+<button (click) = "toggleColor()"> Change Color</button>
+<hr>
+
+<!-- To do list  -->
+<h1>ToDo List</h1>
+<input type="text" name="input" #box>
+<button (click)="addTask(box.value)">ADD Task</button>
+
+
+<ul>
+  <li *ngFor = "let t of taskList">{{t.task}} <button (click) = "removeTask(t)">Remove</button></li>
+</ul>

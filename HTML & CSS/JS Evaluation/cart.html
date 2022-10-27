@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5c65af06e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="cart_style.css">
+</head>
+<body>
+    <div class="split left">
+        <h1>Shopping Cart</h1>
+        <div class="productList">
+            <label for="">Select Product</label><br>
+            <select name="products" id="products" required>    
+                <option value="none" selected disabled hidden>select product</option>
+            </select>
+        </div>
+        
+        <br>
+        <div class="price-div">
+            <label for="">Unit Price:</label><br>
+                <input type="text" for="" name="price" id="price" value="0" disabled required>
+            </label>
+        </div>
+
+        <br>
+
+        <label for="">Select Quantity</label><br>
+        <input type="number" class="quantity" id="quantity" required>
+
+        <br><br>
+
+        <button id="addToCart" class="addToCart" value="AddToCart">Add to Cart</button>
+
+        <br><br>
+    </div>
+
+    <div class="split right">
+        <table border="1" class="table" id="table">
+            <thead>
+                <th scope="col">Product</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Unit Price</th>
+                <th scope="col">Sub Total</th>
+                <th scope="col">Remove</th>
+            </thead>
+
+            <tr class="row" id="row">
+                <td> -- </td>
+                <td> -- </td>
+                <td> -- </td>
+                <td> -- </td>
+                <td> -- </td>
+            </tr>
+        </table>
+
+        <h2>Cart Total</h2>
+        <label class="cartTotal" id="cartTotal">Rs. 0</label>
+    </div>
+    <script src="cart_script.js"></script>
+</body>
+</html>

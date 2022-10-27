@@ -1,0 +1,56 @@
+<p>user-types works!</p>
+
+<form [formGroup]="addUserTypeForm">
+    <label>Name: </label>
+    <input type="text" formControlName="userName">
+    <div class="error">
+        <small *ngIf="addUserTypeForm.get('userName')?.hasError('required') && 
+        addUserTypeForm.get('userName')?.touched">Username is required</small>
+        <small *ngIf="addUserTypeForm.get('userName')?.hasError('minlength') && 
+        addUserTypeForm.get('userName')?.touched">Username should be of minimum length 6</small>
+        <small *ngIf="addUserTypeForm.get('userName')?.hasError('maxlength') && 
+        addUserTypeForm.get('userName')?.touched">Username should be of maximum length 15</small>
+    </div>
+    <br>
+
+    <label>Password: </label>
+    <input type="text" formControlName="password">
+    <div class="error">
+        <small *ngIf="addUserTypeForm.get('password')?.hasError('required') && 
+        addUserTypeForm.get('password')?.touched">Password is required</small>
+        <small *ngIf="addUserTypeForm.get('password')?.hasError('pattern') && 
+        addUserTypeForm.get('password')?.touched">Password must contain atleast one UpperCase, one Lowercase, numbers, and one special character</small>
+    </div>
+    <br>
+
+    <label>User Description: </label><br>
+    <textarea cols="30" rows="5" formControlName="userDescription"></textarea>
+    <div class="error">
+        <small *ngIf="addUserTypeForm.get('userDescription')?.hasError('required') && 
+        addUserTypeForm.get('userDescription')?.touched">User Description is required</small>
+        <small *ngIf="addUserTypeForm.get('userDescription')?.hasError('pattern') && 
+        addUserTypeForm.get('userDescription')?.touched">User Description is wrong</small>
+    </div>
+    <br>
+
+    <label>Gender: </label><br>
+    <input type="radio" value="male" formControlName="userGender"> Male
+    <input type="radio" value="female" formControlName="userGender"> Female
+    <div class="error">
+        <small *ngIf="addUserTypeForm.get('userGender')?.hasError('required') && 
+        addUserTypeForm.get('userGender')?.touched">Please select gender</small>
+    </div>
+    <br>
+
+    <input type="checkbox" formControlName="conditions"> I agree to terms and conditions.
+    <div class="error">
+        <small *ngIf="addUserTypeForm.get('conditions')?.hasError('required') && 
+        addUserTypeForm.get('conditions')?.touched">Please agree to terms and conditions</small>
+    </div>
+    <br>
+
+    <button type="submit" (click)="addUser()" [disabled]="addUserTypeForm.invalid">Submit</button>
+    &nbsp;
+    <button type="submit" (click)="reset()">Reset</button>
+
+</form>

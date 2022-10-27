@@ -1,0 +1,19 @@
+[
+    {
+        "title":"Chess Grandmaster",
+        "author":"V Anand",
+        "price":500
+    },
+
+    {
+        "title":"JS by Ritesh Ghule",
+        "author":"Ritesh G",
+        "price":400
+    },
+
+    {
+        "title":"Programming in C",
+        "author":"Y Kanetkar",
+        "price":450
+    }
+]

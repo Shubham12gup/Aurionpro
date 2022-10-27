@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        label.error{
+            font-weight: 700;
+            display: block;
+            color: #f00;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<!-- <body class="bg-orange-300"> -->
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ...">
+<!-- <h3>
+        <b> Registeration Form </b> 
+    </h3> -->
+    <div>
+        <div class="grid h-screen place-items-center">
+            <form action="" id="basicform" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mt-4 mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="name"><b>Name</b></label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
+                type="text" placeholder="Enter Name" minlength="2" name="name" id="name"><br><br>
+
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="Email" ><b>Email</b></label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
+                type="email" placeholder="Enter Email" name="email" id="email" required><br><br>
+
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="psw"><b>Password</b></label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
+                type="password" placeholder="Enter Password" name="psw" id="psw" required><br><br>
+
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="psw"><b>Confirm Password</b></label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
+                type="password" placeholder="Renter Password" name="confirm" id="confirm"
+                    required><br><br>
+
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="number"><b>Conatct number</b></label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
+                type="text" placeholder="Enter number" id="number" name="number" required><br><br>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> You agree to our terms and conditions
+                </label><br> <br>
+                <input 
+                class="inline-block px-10 py-3 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                type="submit" id="button">
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="C:\Swabhav-Training-Repo\HTML & CSS\Tailwind css\Form.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" ></script>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+body{
+    width: 100%;
+    height: auto;
+
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    /* https://uigradients.com/#Mirage */
+
+}
+
+
+i {
+    padding: 5px;
+    
+    
+    }
+
+    ul {
+        list-style-type: none;
+
+            
+/* background-color: rgba(207, 207, 207, 0.638); */
+
+
+      }
+
+
+
+.main{
+
+    width: 600px;
+        height: 400px;
+        margin-top: 10px;
+        align-content: center;
+        margin-left: 25%;
+
+        
+    
+/* background-color: rgba(214, 198, 198, 0.638); */
+
+}
+
+.in{
+    padding: 5px;
+    border-radius: 10px;
+            
+}
+
+li{
+
+    
+    padding: 10px;
+   
+    margin-top: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#tasks{
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+
+.task{
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+    background-color: #c5e1e6;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+}
+.task span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.task i{
+    background-color: #6583e5;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    padding: 10px;
+}

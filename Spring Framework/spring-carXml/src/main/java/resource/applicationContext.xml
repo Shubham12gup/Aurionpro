@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<context:property-placeholder location="classpath:resource/car.properties"/>
+	
+	<bean id="sedanCar" class="com.aurionpro.spring_carXml.SedanCar" scope="singleton" init-method="doInit" destroy-method="doDestroy">
+		<constructor-arg ref="lightEngine"></constructor-arg>
+		<constructor-arg value="Sedan"></constructor-arg>
+		<constructor-arg value="${sedanCar.manufacturingCountry}"></constructor-arg>
+	</bean>
+	
+	<bean id="sportsCar" class="com.aurionpro.spring_carXml.SportsCar" scope="prototype">
+		<constructor-arg ref="heavyEngine"></constructor-arg>
+		<constructor-arg value="${sportsCar.manufacturingCountry}"></constructor-arg>
+		
+	</bean>
+	
+	<bean id="lightEngine" class="com.aurionpro.spring_carXml.LightEngine"></bean>
+	
+	<bean id="heavyEngine" class="com.aurionpro.spring_carXml.HeavyEngine"></bean>
+	
+</beans>
+
+
+
+
+

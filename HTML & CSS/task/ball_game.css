@@ -1,0 +1,37 @@
+.btn{
+    border-radius: 50%;
+    border: 0px solid #000000;
+    padding: 20px;
+   
+   
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: medium;
+   font-style: italic;
+
+}
+
+.red{
+    border-radius: 50%;
+    border: 0px solid #000000;
+    padding: 30px;
+    background-color: rgb(255, 47, 0);
+
+}
+
+.green{
+    border-radius: 50%;
+    border: 0px solid #000000;
+    padding: 20px;
+    background-color: rgb(57, 238, 33);
+    font-size: medium;
+    font-style: italic;
+ 
+
+}
+
+.box{
+    width: 700px;
+   margin: auto;
+    margin-top: 5px;
+}

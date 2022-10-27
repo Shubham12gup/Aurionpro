@@ -1,0 +1,37 @@
+<p>pipes works!</p>
+
+
+<h3>{{name | uppercase}}</h3>
+<h3>{{name | lowercase}}</h3>
+<h3>{{name | titlecase}}</h3>
+
+<!-- Arrays -->
+<!-- <ul>
+    <li *ngFor="let number of numbers">{{number}}</li>
+</ul> -->
+
+<p>{{numbers | slice: 0:3}}</p>
+
+<p>{{today | date}}</p>
+<p>{{today | date: "fullDate"}}</p>
+<p>{{today | date: "shortDate"}}</p>
+<p>{{today | date: "dd/mm/yyyy"}}</p>
+<p>{{today | date: "hh:mm:ss a z"}}</p>
+<p>{{today | date: "fullTime"}}</p>
+<p>{{today | date: "fullTime" | lowercase}}</p>
+
+<p>{{person | json}}</p>
+<p>{{person | json | uppercase}}</p>
+
+<p>{{number}}</p>
+<p>{{number | number:"0.1-1"}}</p>
+<p>{{number | number:".4-5"}}</p>
+
+<p>{{number | currency: ""}}</p>
+<p>{{number | currency:"USD"}}</p>
+<p>{{number | currency:"INR"}}</p>
+
+
+
+
+

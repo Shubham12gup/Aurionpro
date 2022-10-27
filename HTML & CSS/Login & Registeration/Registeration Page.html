@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            border: 3px solid #f1f1f1;
+        }
+
+        input[type=text],
+        input[type=password],
+        input[type=number],
+        input[type="date"],
+        textarea {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        /* .form-container {
+            position: absolute;
+            width: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .container {
+            padding: 16px;
+
+        } */
+    </style>
+    <script src="Registeration Page.js"></script>
+</head>
+
+<body>
+    <h3>
+        <center> Registeration Form </center>
+    </h3>
+
+    <div class="form-container">
+        <form action="">
+            <label for="Email"><b>Email</b></label><br>
+            <input type="text" placeholder="Enter Email" name="Email" id= "Email" required><br><br>
+
+            <label for="psw"><b>Password</b></label><br>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required><br><br>
+
+            <label for="psw"><b>Confirm Password</b></label><br>
+            <input type="password" placeholder="Renter Password" name="confirm-psw" id="confirm-psw" required><br><br>
+            
+            <label for="number"><b>Conatct number</b></label><br>
+            <input type="number" placeholder="Enter number" id="number" name="number"><br><br>  
+
+            <label for="birthday"><b>Enter your date of birth</b></label><br>
+            <input type="date" placeholder="DD-MM-YYYY" id="birthday" name="birthday"><br><br>
+
+            <label for="psw"><b>Select Gender</b></label><br>
+            <input type="radio" name="gender" required>
+            <label for="Gender"><b>Male</b></label>
+
+            <input type="radio" name="gender" required>
+            <label for="Gender"><b>Female</b></label>
+
+            <br><br> <label for="psw"><b>Select Courses</b></label><br>
+            <input type="checkbox" name="checkbox">
+            <label for="Courses">JAVA</label><br>
+
+            <input type="checkbox" name="checkbox">
+            <label for="Courses">PYTHON</label><br>
+
+            <input type="checkbox" name="checkbox">
+            <label for="Courses">C/C++</label><br><br>
+
+            <label for="cars"><b>Choose City</b></label><br>
+            <select name="city">
+                <option value="volvo">Mumbai</option>
+                <option value="saab">Goa</option>
+                <option value="mercedes">Delhi</option>
+                <option value="audi">Chennai</option>
+            </select><br>
+
+            <br><label for="text"><b>Why have you selected the course</b></label><br>
+            <textarea name="textarea" rows="6" cols="50"> </textarea>
+
+            <br><label for="colorpicker"><b>Choose your favourite color </b></label><br>
+            <input type="color" id="colorpicker" value="#0000ff"><br><br>
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> You agree to our terms and conditions
+            </label><br>
+            <button type="submit" onclick="validateForm()">Submit</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+        <span>Already registered? <a href="Login.html">Login Here</a></span>
+    </div>
+    </form>
+
+</body>
+
+</html>
